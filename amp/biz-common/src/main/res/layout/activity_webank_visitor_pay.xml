@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.dtds.mobileplatform.widget.HeaderView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hvTitleTxt="微信扫码支付"/>
+
+        <com.webank.mbank.web.webview.WeBridgeWebView
+            android:id="@+id/pay_wv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_print"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:textColor="@android:color/white"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:background="@color/print_ticket"
+        android:text="打印小票"/>
+
+
+</RelativeLayout>

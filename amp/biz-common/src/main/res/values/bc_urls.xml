@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--所有可切换的环境-->
+    <string-array name="urlsStr">
+        <item>正式环境</item>
+        <item>195新开发环境</item>
+        <item>120环境</item>
+        <item>140环境</item>
+        <item>160环境</item>
+        <item>UAT环境</item>
+        <item>67环境</item>
+        <item>培训环境</item>
+        <item>120.77.66.100</item>
+    </string-array>
+
+    <!--导购-->
+    <string-array name="gss">
+        <!--正式-->
+        <item>http://gss.tsh365.cn/</item>
+        <!--195新开发环境-->
+        <item>http://172.16.1.203:8084/</item>
+        <!--120环境-->
+        <item>http://172.16.1.133:8084/</item>
+        <!--140环境-->
+        <item>http://172.16.1.153:8084/</item>
+        <!--160环境-->
+        <item>http://172.16.1.173:8084/</item>
+        <!--UAT环境-->
+        <item>http://ugss.tsh365.cn/</item>
+        <!--67环境-->
+        <item>http://172.16.2.67:8084/</item>
+        <!--培训环境-->
+        <item>http://pxgss.testtsh365.cn:15120/</item>
+        <item>http://120.77.66.100:8084/</item>
+    </string-array>
+
+    <!--导购2-->
+    <string-array name="bgps">
+        <!--正式-->
+        <item>http://bgps.tsh365.cn/</item>
+        <!--195新开发环境-->
+        <item>http://172.16.1.195:8087/</item>
+        <!--<item>http://192.168.105.184:8087/</item>-->
+        <!--120环境-->
+        <item>http://172.16.1.125:8087/</item>
+        <!--140环境-->
+        <item>http://172.16.1.145:8087/</item>
+        <!--160环境-->
+        <item>http://172.16.1.165:8087/</item>
+        <!--UAT环境-->
+        <item>http://ubgps.tsh365.cn/</item>
+        <!--67环境-->
+        <item>http://172.16.2.67:8084/</item>
+        <!--培训环境-->
+        <item>http://pxgss.testtsh365.cn:15120/</item>
+        <item>http://120.77.66.100:8087/</item>
+    </string-array>
+
+    <!--市场营销-->
+    <string-array name="shlq">
+        <!--正式-->
+        <item>http://shlq.tsh365.cn/</item>
+        <!--195新开发环境-->
+        <item>http://172.16.1.205:8150/</item>
+        <!--120环境-->
+        <item>http://172.16.1.135:8150/</item>
+        <!--140环境-->
+        <item>http://172.16.1.155:8150/</item>
+        <!--160环境-->
+        <item>http://172.16.1.175:8150/</item>
+        <!--UAT环境-->
+        <item>http://ushlq.tsh365.cn/</item>
+        <!--67环境-->
+        <item>http://172.16.2.67:8150/</item>
+        <!--培训环境-->
+        <item>http://pxshlq.testtsh365.cn:15121/</item>
+        <item>http://120.77.66.100:8150/</item>
+    </string-array>
+
+    <!--鉴权-->
+    <string-array name="auc">
+        <!--正式-->
+        <item>http://boss.tsh365.cn/</item>
+        <!--195新开发环境-->
+        <item>http://172.16.1.195:8030/</item>
+        <!--120环境-->
+        <item>http://172.16.1.125:8030/</item>
+        <!--140环境-->
+        <item>http://172.16.1.145:8030/</item>
+        <!--160环境-->
+        <item>http://172.16.1.165:8030/</item>
+        <!--UAT环境-->
+        <item>http://uat.tsh365.cn/</item>
+        <!--67环境-->
+        <item>http://172.16.2.67:8030/</item>
+        <!--培训环境-->
+        <item>http://pxauc.testtsh365.cn:15101/</item>
+        <item>http://120.77.66.100:8030/</item>
+    </string-array>
+
+    <!--商家-->
+    <string-array name="bis">
+        <!--正式-->
+        <item>http://bis.tsh365.cn/</item>
+        <!--195新开发环境-->
+        <item>http://172.16.1.199:8010/</item>
+        <!--120环境-->
+        <item>http://172.16.1.129:8010/</item>
+        <!--140环境-->
+        <item>http://172.16.1.149:8010/</item>
+        <!--160环境-->
+        <item>http://172.16.1.169:8010/</item>
+        <!--UAT环境-->
+        <item>http://ubis.tsh365.cn/</item>
+        <!--67环境-->
+        <item>http://172.16.2.67:8010/</item>
+        <!--培训环境-->
+        <item>http://pxbis.testtsh365.cn:15102/</item>
+        <item>http://120.77.66.100:8010/</item>
+    </string-array>
+
+    <!--商品-->
+    <string-array name="wsgms">
+        <!--正式-->
+        <item>http://wsgms.tsh365.cn/</item>
+        <!--195新开发环境-->
+        <item>http://172.16.1.198:8051/</item>
+        <!--<item>http://192.168.105.20:8051/</item>-->
+        <!--120环境-->
+        <item>http://172.16.1.128:8051/</item>
+        <!--140环境-->
+        <item>http://172.16.1.148:8051/</item>
+        <!--160环境-->
+        <item>http://172.16.1.168:8051/</item>
+        <!--UAT环境-->
+        <item>http://uwsgms.tsh365.cn/</item>
+        <!--67环境-->
+        <item>http://172.16.2.67:8051/</item>
+        <!--培训环境-->
+        <item>http://pxwsgms.testtsh365.cn:15119/</item>
+        <item>http://120.77.66.100:8051/</item>
+    </string-array>
+
+    <!--会员-->
+    <string-array name="mbr">
+        <!--正式-->
+        <item>http://mbr.tsh365.cn/</item>
+        <!--195新开发环境-->
+        <item>http://172.16.1.201:8160/</item>
+        <!--120环境-->
+        <item>http://172.16.1.131:8160/</item>
+        <!--140环境-->
+        <item>http://172.16.1.151:8160/</item>
+        <!--160环境-->
+        <item>http://172.16.1.171:8160/</item>
+        <!--UAT环境-->
+        <item>http://umbr.tsh365.cn/</item>
+        <!--67环境-->
+        <item>http://172.16.2.67:8160/</item>
+        <!--培训环境-->
+        <item>http://pxmbr.testtsh365.cn:15109/</item>
+        <item>http://120.77.66.100:8160/</item>
+    </string-array>
+
+    <!--广告-->
+    <string-array name="adms">
+        <!--正式-->
+        <item>http://adms.tsh365.cn/</item>
+        <!--195新开发环境-->
+        <item>http://172.16.1.205:8121/</item>
+        <!--120环境-->
+        <item>http://172.16.1.135:8121/</item>
+        <!--140环境-->
+        <item>http://172.16.1.155:8121/</item>
+        <!--160环境-->
+        <item>http://172.16.1.175:8121/</item>
+        <!--UAT环境-->
+        <item>http://uadms.tsh365.cn/</item>
+        <!--67环境-->
+        <item>http://172.16.2.67:8121/</item>
+        <!--培训环境-->
+        <item>http://pxwmadms.testtsh365.cn:15116/</item>
+        <item>http://120.77.66.100:8121/</item>
+    </string-array>
+
+    <!--消息公告-->
+    <string-array name="ia">
+        <!--正式-->
+        <item>http://ia.tsh365.cn/</item>
+        <!--195新开发环境-->
+        <item>http://172.16.1.200:8170/</item>
+        <!--120环境-->
+        <item>http://172.16.1.130:8170/</item>
+        <!--140环境-->
+        <item>http://172.16.1.150:8170/</item>
+        <!--160环境-->
+        <item>http://172.16.1.170:8170/</item>
+        <!--UAT环境-->
+        <item>http://uia.tsh365.cn/</item>
+        <!--67环境-->
+        <item>http://172.16.2.67:8170/</item>
+        <!--培训环境-->
+        <item>http://pxia.testtsh365.cn:15107/</item>
+        <item>http://120.77.66.100:8170/</item>
+    </string-array>
+
+    <!--共享-->
+    <string-array name="share">
+        <!--正式-->
+        <item>http://share.tsh365.cn/</item>
+        <!--195新开发环境-->
+        <item>http://172.16.1.202:8992/</item>
+        <!--120环境-->
+        <item>http://172.16.1.130:8992/</item>
+        <!--140环境-->
+        <item>http://172.16.1.152:8992/</item>
+        <!--160环境-->
+        <item>http://172.16.1.172:8992/</item>
+        <!--UAT环境-->
+        <item>http://ushare.tsh365.cn/</item>
+        <!--67环境-->
+        <item>http://172.16.2.67:8992/</item>
+        <!--培训环境-->
+        <item>http://pxshare.testtsh365.cn:15113/</item>
+        <item>http://120.77.66.100:8992/</item>
+    </string-array>
+
+    <!--账户-->
+    <string-array name="acc">
+        <!--正式-->
+        <item>http://acc.tsh365.cn/</item>
+        <!--195新开发环境-->
+        <item>http://172.16.1.196:8095/</item>
+        <!--120环境-->
+        <item>http://172.16.1.126:8095/</item>
+        <!--140环境-->
+        <item>http://172.16.1.146:8095/</item>
+        <!--160环境-->
+        <item>http://172.16.1.166:8095/</item>
+        <!--UAT环境-->
+        <item>http://uacc.tsh365.cn/</item>
+        <!--67环境-->
+        <item>http://172.16.2.67:8095/</item>
+        <!--培训环境-->
+        <item>http://pxacc.testtsh365.cn:15100/</item>
+        <item>http://120.77.66.100:8095/</item>
+    </string-array>
+
+    <!--内容管理-->
+    <string-array name="cms">
+        <!--正式-->
+        <item>http://cms.tsh365.cn/</item>
+        <!--195新开发环境-->
+        <item>http://172.16.1.202:8995/</item>
+        <!--120环境-->
+        <item>http://172.16.1.132:8995/</item>
+        <!--140环境-->
+        <item>http://172.16.1.152:8995/</item>
+        <!--160环境-->
+        <item>http://172.16.1.172:8995/</item>
+        <!--UAT环境-->
+        <item>http://ucms.tsh365.cn/</item>
+        <!--67环境-->
+        <item>http://172.16.2.67:8995/</item>
+        <!--培训环境-->
+        <item>http://pxcms.testtsh365.cn:15103/</item>
+        <item>http://120.77.66.100:8995/</item>
+    </string-array>
+
+    <string-array name="pos">
+        <!--正式-->
+        <item>http://pos.tsh365.cn/</item>
+        <!--195新开发环境-->
+        <item>http://172.16.1.200:8111/</item>
+        <!--120环境-->
+        <item>http://172.16.1.130:8111/</item>
+        <!--140环境-->
+        <item>http://172.16.1.150:8111/</item>
+        <!--160环境-->
+        <item>http://172.16.1.170:8111/</item>
+        <!--UAT环境-->
+        <item>http://upos.tsh365.cn/</item>
+        <!--67环境-->
+        <item>http://172.16.2.67:8111/</item>
+        <!--培训环境-->
+        <item>http://pxpos.testtsh365.cn:15112/</item>
+        <item>http://120.77.66.100:8111/</item>
+    </string-array>
+
+    <!--增值服务2-->
+    <string-array name="vas">
+        <!--正式-->
+        <item>http://vas.tsh365.cn/</item>
+        <!--195新开发环境-->
+        <item>http://172.16.1.206:8180/</item>
+        <!--120环境-->
+        <item>http://172.16.1.136:8180/</item>
+        <!--140环境-->
+        <item>http://172.16.1.156:8180/</item>
+        <!--160环境-->
+        <item>http://172.16.1.176:8180/</item>
+        <!--UAT环境-->
+        <item>http://uvas.tsh365.cn/</item>
+        <!--67环境-->
+        <item>http://172.16.2.67:8180/</item>
+        <!--培训环境-->
+        <item>http://pxvas.testtsh365.cn:15115/</item>
+        <item>http://120.77.66.100:8180/</item>
+    </string-array>
+
+    <!--同城???-->
+    <string-array name="is">
+        <!--正式-->
+        <item>http://is.tsh365.cn/</item>
+        <!--195新开发环境-->
+        <item>http://172.16.1.206:8190/</item>
+        <!--120环境-->
+        <item>http://172.16.1.136:8190/</item>
+        <!--140环境-->
+        <item>http://172.16.1.156:8190/</item>
+        <!--160环境-->
+        <item>http://172.16.1.176:8190/</item>
+        <!--UAT环境-->
+        <item>http://uis.tsh365.cn/</item>
+        <!--67环境-->
+        <item>http://172.16.2.67:8190/</item>
+        <!--培训环境-->
+        <item>http://pxis.testtsh365.cn:15122/</item>
+        <item>http://120.77.66.100:8190/</item>
+    </string-array>
+
+    <!--主题-->
+    <string-array name="tmps">
+        <!--正式-->
+        <item>http://tmps.tsh365.cn/</item>
+        <!--195新开发环境-->
+        <item>http://172.16.1.203:8156/</item>
+        <!--120环境-->
+        <item>http://172.16.1.133:8156/</item>
+        <!--140环境-->
+        <item>http://172.16.1.153:8156/</item>
+        <!--160环境-->
+        <item>http://172.16.1.173:8156/</item>
+        <!--UAT环境-->
+        <item>http://utmps.tsh365.cn/</item>
+        <!--67环境-->
+        <item>http://172.16.2.67:8190/</item>
+        <!--培训环境-->
+        <item>http://pxis.testtsh365.cn:15122/</item>
+        <item>http://120.77.66.100:8156/</item>
+    </string-array>
+
+    <!--订单-->
+    <string-array name="orderapp">
+        <!--正式-->
+        <item>http://ordapp.tsh365.cn/</item>
+        <!--195新开发环境-->
+        <item>http://172.16.1.197:8060/</item>
+        <!--120环境-->
+        <item>http://172.16.1.127:8060/</item>
+        <!--140环境-->
+        <item>http://172.16.1.147:8060/</item>
+        <!--160环境-->
+        <item>http://172.16.1.167:8060/</item>
+        <!--UAT环境-->
+        <item>http://uordapp.tsh365.cn/</item>
+        <!--67环境-->
+        <item>http://172.16.2.67:8060/</item>
+        <!--培训环境-->
+        <item>http://pxordapp.testtsh365.cn:15110/</item>
+        <item>http://120.77.66.100:8060/</item>
+    </string-array>
+
+    <!--财务-->
+    <string-array name="fina">
+        <!--正式-->
+        <item>http://fina.tsh365.cn/</item>
+        <!--195新开发环境-->
+        <item>http://172.16.1.204:8040/</item>
+        <!--120环境-->
+        <item>http://172.16.1.134:8040/</item>
+        <!--140环境-->
+        <item>http://172.16.1.154:8040/</item>
+        <!--160环境-->
+        <item>http://172.16.1.174:8040/</item>
+        <!--UAT环境-->
+        <item>http://ufina.tsh365.cn/</item>
+        <!--67环境-->
+        <item>http://172.16.2.67:8040/</item>
+        <!--培训环境-->
+        <item>http://pxfina.testtsh365.cn:15110/</item>
+        <item>http://120.77.66.100:8040/</item>
+    </string-array>
+
+    <!--招工-->
+    <string-array name="job">
+        <!--正式-->
+        <item>http://job.tsh365.cn/</item>
+        <!--195新开发环境-->
+        <item>http://172.16.1.204:8040/</item>
+        <!--120环境-->
+        <item>http://172.16.1.136:8188/</item>
+        <!--140环境-->
+        <item>http://172.16.1.154:8040/</item>
+        <!--160环境-->
+        <item>http://172.16.1.176:8188/</item>
+        <!--UAT环境-->
+        <item>http://ujob.tsh365.cn/</item>
+        <!--67环境-->
+        <item>http://172.16.2.67:8188/</item>
+        <!--培训环境-->
+        <item>http://pxjob.testtsh365.cn:15124/</item>
+        <item>http://172.16.1.204:8040/</item>
+    </string-array>
+
+    <!--增值服务-->
+    <string-array name="wmvas">
+        <!--正式-->
+        <item>http://wmvas.tsh365.cn/</item>
+        <!--195新开发环境-->
+        <item>http://172.16.1.206:8200/</item>
+        <!--120环境-->
+        <item>http://172.16.1.136:8200/</item>
+        <!--140环境-->
+        <item>http://172.16.1.154:8040/</item>
+        <!--160环境-->
+        <item>http://172.16.1.176:8200/</item>
+        <!--UAT环境-->
+        <item>http://uwmvas.tsh365.cn/</item>
+        <!--67环境-->
+        <item>http://172.16.2.67:8200/</item>
+        <!--培训环境-->
+        <item>http://pxwmvas.testtsh365.cn:15123/</item>
+        <item>http://172.16.1.206:8200/</item>
+    </string-array>
+
+</resources>

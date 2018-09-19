@@ -1,0 +1,22 @@
+<resources>
+    <declare-styleable name="AdvertViewStyleable">
+        <!-- 广告位置编码 -->
+        <attr name="avAdvertPositionCode" format="reference|string"/>
+        <!-- 广告类型 -->
+        <attr name="avAdvertisType" format="reference|integer"/>
+        <!-- 播放系统-->
+        <attr name="avAdvertPlaySystem" format="reference|integer"/>
+        <!-- 是否需要设备id -->
+        <attr name="avNeedDeviceId" format="reference|boolean"/>
+        <!-- 提示器资源图片-->
+        <attr name="avIndicatorDrawable" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="EnvPickerButton">
+        <!-- 产品名称 -->
+        <attr name="product" >
+            <flag name="tsh" value="0"/>
+            <flag name="jby" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>

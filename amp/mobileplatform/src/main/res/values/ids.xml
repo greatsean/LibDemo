@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="gridview" type="id"/>
+    <item name="webview" type="id"/>
+    <item name="scrollview" type="id"/>
+
+    <item name="ev_desc_imv" type="id"/>
+    <item name="ev_desc_main_txt" type="id"/>
+    <item name="ev_desc_sub_txt" type="id"/>
+    <item name="ev_load_btn" type="id"/>
+
+</resources>
