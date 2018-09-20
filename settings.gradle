@@ -1,1 +1,1 @@
-include ':amp:mobileplatform',':app'
+include ':amp:mobileplatform',':amp:biz-common',':app'

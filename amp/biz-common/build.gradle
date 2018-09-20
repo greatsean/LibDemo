@@ -46,3 +46,5 @@ dependencies {
     compile 'cn.bingoogolapple:bga-banner:2.1.8@aar'//轮播广告
     compile 'com.github.bumptech.glide:glide:3.7.0'
 }
+
+apply from: './bintray.gradle'

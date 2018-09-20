@@ -2,9 +2,6 @@ package com.dtds.common.abs;
 
 import android.content.Context;
 
-import com.dtds.common.biz.advert.vo.AdvertVO;
-import com.dtds.common.biz.webank.print.OrderPrintable;
-
 import java.util.Map;
 
 /*****************************************
@@ -58,13 +55,13 @@ public interface BizCommonInterface {
      */
     Map<String, String> getHttpCommonHeaderParams();
 
-    /**
-     * 广告点击后的处理逻辑
-     *
-     * @param ctx
-     * @param advertVO
-     */
-    void onAdvertClick(Context ctx, AdvertVO advertVO);
+//    /**
+//     * 广告点击后的处理逻辑
+//     *
+//     * @param ctx
+//     * @param advertVO
+//     */
+//    void onAdvertClick(Context ctx, AdvertVO advertVO);
 
     /**
      * 获得应用上下文
@@ -73,11 +70,11 @@ public interface BizCommonInterface {
      */
     Context getApplicationContext();
 
-    /**
-     * 打印订单信息
-     *
-     * @param type
-     * @return
-     */
-    OrderPrintable getOrderPrinter(Object type);
+//    /**
+//     * 打印订单信息
+//     *
+//     * @param type
+//     * @return
+//     */
+//    OrderPrintable getOrderPrinter(Object type);
 }
