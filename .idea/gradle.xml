@@ -9,9 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/amp" />
-            <option value="$PROJECT_DIR$/amp/biz-common" />
             <option value="$PROJECT_DIR$/amp/mobileplatform" />
-            <option value="$PROJECT_DIR$/app" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

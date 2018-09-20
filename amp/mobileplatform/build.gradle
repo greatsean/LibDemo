@@ -1,9 +1,6 @@
 apply plugin: 'com.android.library'
 
-apply plugin: 'com.github.dcendents.android-maven'
-apply plugin: 'com.jfrog.bintray'
-version = "0.1"
-
+apply plugin: 'com.novoda.bintray-release'//添加
 android {
     publishNonDefault true
     compileSdkVersion 25
@@ -24,6 +21,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    lintOptions{
+        abortOnError false
+    }
 }
 
 dependencies {
@@ -34,78 +35,12 @@ dependencies {
     compile "com.android.support:appcompat-v7:25.3.1"
 }
 
-def siteUrl = 'https://github.com/greatsean/LibDemo'                        // #CONFIG# // project homepage
-def gitUrl = 'https://github.com/greatsean/LibDemo.git'                     // #CONFIG# // project git
-group = "com.dtds"                                                          // #CONFIG# // Maven Group ID for the artifact (pageckage name is ok)
-
-install {
-    repositories.mavenInstaller {
-        // This generates POM.xml with proper parameters
-        pom {
-            project {
-                packaging 'aar'
-                name 'common libs For Android'                                   // #CONFIG# // project title
-                url siteUrl
-                // Set your license
-                licenses {
-                    license {
-                        name 'The Apache Software License, Version 2.0'
-                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-                    }
-                }
-                developers {
-                    developer {
-                        id 'lixiaohui'                                           // #CONFIG# // your user id (you can write your nickname)
-                        name 'Xiaohui.Li'                                       // #CONFIG# // your user name
-                        email 'lixiaohui_qiuzhi@163.com'                               // #CONFIG# // your email
-                    }
-                }
-                scm {
-                    connection gitUrl
-                    developerConnection gitUrl
-                    url siteUrl
-                }
-            }
-        }
-    }
-}
-
-task sourcesJar(type: Jar) {
-    from android.sourceSets.main.java.srcDirs
-    classifier = 'sources'
-}
-
-task javadoc(type: Javadoc) {
-    source = android.sourceSets.main.java.srcDirs
-    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
-}
-
-task javadocJar(type: Jar, dependsOn: javadoc) {
-    classifier = 'javadoc'
-    from javadoc.destinationDir
-}
-
-artifacts {
-    // archives javadocJar
-    archives sourcesJar
-}
-
-Properties properties = new Properties()
-boolean isHasFile = false
-if (project.rootProject.file('local.properties') != null){
-    isHasFile = true
-    properties.load(project.rootProject.file('local.properties').newDataInputStream())
-}
-bintray {
-    user = isHasFile ? properties.getProperty("bintray.user") : System.getenv("bintray.user")
-    key = isHasFile ? properties.getProperty("bintray.apikey") : System.getenv("bintray.apikey")
-    configurations = ['archives']
-    pkg {
-        repo = "maven"
-        name = "mobileplatform"                                                 // #CONFIG# project name in jcenter
-        websiteUrl = siteUrl
-        vcsUrl = gitUrl
-        licenses = ["Apache-2.0"]
-        publish = true
-    }
+//添加
+publish {
+    userOrg = 'lixiaohui'//bintray.com用户名
+    groupId = 'com.dtds'//jcenter上的路径
+    artifactId = 'mobileplatform'//项目名称
+    publishVersion = '1.0.0'//版本号
+    desc = 'Oh hi, This is a nice common libs For Android'//描述，不重要
+    website = 'https://github.com/greatsean/LibDemo'//网站，不重要；尽量模拟github上的地址，例如我这样的；当然你有地址最好了
 }

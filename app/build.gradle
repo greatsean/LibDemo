@@ -8,7 +8,7 @@ android {
     buildToolsVersion cfg.buildToolsVersion
 
     defaultConfig {
-        applicationId "com.dtds.taopickerl"
+        applicationId "com.dtds.libdemo"
         minSdkVersion cfg.minSdk
         targetSdkVersion cfg.targetSdk
         versionCode cfg.versionCode
