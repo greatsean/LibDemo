@@ -10,10 +10,10 @@ import rx.functions.Func1;
  * @date: 2017/9/19
  * @company:深圳动态网络科技有限公司
  *****************************************/
-public class CommRespFunc1<T> implements Func1<CommRespVO<T>, T> {
+public class CommRespFunc1<T> implements Func1<IRootRespVO<T>, T> {
 
     @Override
-    public T call(CommRespVO<T> baseBean) {
+    public T call(IRootRespVO<T> baseBean) {
         if (!baseBean.isSuccess()) {
             throw new UnexpectedDataException(baseBean.getMsg() + "###" + baseBean.getStatus());
         }

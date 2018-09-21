@@ -95,7 +95,7 @@ public class RetrofitTools {
      * @param <T>
      * @return
      */
-    public static <T> Subscription createNetworkSubscription(AppBaseActivity act, Observable<CommRespVO<T>> observable, CommHttpSubscriber<T> subscriber) {
+    public static <T> Subscription createNetworkSubscription(AppBaseActivity act, Observable<IRootRespVO<T>> observable, CommHttpSubscriber<T> subscriber) {
         Subscription subscription = createNetworkSubscription(observable, subscriber);
         act.addSubscription(subscription);
         return subscription;
@@ -109,7 +109,7 @@ public class RetrofitTools {
      * @param <T>
      * @return
      */
-    public static <T> Subscription createNetworkSubscription(Observable<CommRespVO<T>> observable, CommHttpSubscriber<T> subscriber) {
+    public static <T> Subscription createNetworkSubscription(Observable<IRootRespVO<T>> observable, CommHttpSubscriber<T> subscriber) {
         Subscription subscription = observable.map(new CommRespFunc1<T>()).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe(subscriber);
         return subscription;
     }

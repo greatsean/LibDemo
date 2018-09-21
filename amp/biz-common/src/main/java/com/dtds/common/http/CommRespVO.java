@@ -7,7 +7,7 @@ package com.dtds.common.http;
  * @date: 2017/10/26
  * @company:深圳动态网络科技有限公司
  *****************************************/
-public class CommRespVO<T> {
+public class CommRespVO<T> implements IRootRespVO<T> {
 
     private String code;
     private String msg;
@@ -22,6 +22,7 @@ public class CommRespVO<T> {
         this.code = code;
     }
 
+    @Override
     public String getMsg() {
         return msg;
     }
@@ -30,6 +31,7 @@ public class CommRespVO<T> {
         this.msg = msg;
     }
 
+    @Override
     public String getStatus() {
         return status;
     }
@@ -38,6 +40,7 @@ public class CommRespVO<T> {
         this.status = status;
     }
 
+    @Override
     public T getData() {
         return data;
     }
@@ -46,6 +49,7 @@ public class CommRespVO<T> {
         this.data = data;
     }
 
+    @Override
     public boolean isSuccess() {
         return "200".equals(getStatus());
     }

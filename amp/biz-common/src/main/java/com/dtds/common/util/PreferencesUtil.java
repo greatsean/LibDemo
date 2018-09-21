@@ -14,10 +14,16 @@ import com.dtds.common.abs.BizCommonBridge;
  *****************************************/
 public class PreferencesUtil {
     private static final String SPFILENAME = "app_sp";
-    private static SharedPreferences sPreference;
+    private static volatile SharedPreferences sPreference;
 
     public static void init(Context context) {
-        sPreference = context.getSharedPreferences(SPFILENAME, Context.MODE_PRIVATE);
+        if (sPreference == null) {
+            synchronized (PreferencesUtil.class) {
+                if (sPreference == null) {
+                    sPreference = context.getSharedPreferences(SPFILENAME, Context.MODE_PRIVATE);
+                }
+            }
+        }
     }
 
     private static SharedPreferences getPreference() {
@@ -58,6 +64,7 @@ public class PreferencesUtil {
 
     /**
      * 清除指定配置
+     *
      * @param key
      * @return
      */
@@ -79,6 +86,7 @@ public class PreferencesUtil {
 
     /**
      * 获得字段
+     *
      * @param key
      * @param defValue
      * @return
